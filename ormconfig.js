@@ -12,12 +12,12 @@ module.exports = {
   entities: [
     process.env.NODE_ENV === 'development'
       ? './src/models/*.ts'
-      : './dist/models/*.js',
+      : './dist/src/models/*.js',
   ],
   migrations: [
     process.env.NODE_ENV === 'development'
       ? './src/database/migrations/*.ts'
-      : './dist/database/migrations/*.js',
+      : './dist/src/database/migrations/*.js',
   ],
   cli: {
     migrationsDir: './src/database/migrations',
