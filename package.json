@@ -1,12 +1,12 @@
 {
   "name": "desafio-06",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
-    "start": "node dist/src/index.js",
+    "start": "node dist/src/server.js",
     "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
     "test": "cross-env NODE_ENV=test jest"
   },
